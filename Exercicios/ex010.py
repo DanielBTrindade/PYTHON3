@@ -7,6 +7,7 @@ print('Com R$ {:.2f} você pode comprar UU$ {:.2f} '.format(n, (n / 5.89)))
 print('Com R$ {:.2f} você pode comprar EUR {:.2f} '.format(n, (n / 6.13)))
 print('Com R$ {:.2f} você pode comprar JPY {:.2f} '.format(n, (n / 0.03802)))
 print('Com R$ {:.2f} você pode comprar ARS {:.2f} '.format(n, (n / 0.0056)))
+print('Com R$ {:.2f} você pode comprar BTC {:.7f} '.format(n, (n / 617204.00)))
 #SOLUÇÃO DO PROFESSOR
 real = float(input('Quanto dinheiro você tem na carteira? R$ '))
 dolar = real / 3.27
