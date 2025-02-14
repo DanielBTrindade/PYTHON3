@@ -1,5 +1,3 @@
-from xml.dom.minidom import ProcessingInstruction
-
 frase = 'Curso em Video Python'
 print(frase)
 print(frase[9])
