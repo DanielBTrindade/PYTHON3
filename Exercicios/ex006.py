@@ -1,5 +1,5 @@
 #DESAFIO 07
-#CRIE UM ALGORITMO QUE LEIA UM NUMERO E MONTRE O DOBRO O TRIPLO E A RAIZ QUADRADA
+#CRIE UM ALGORITMO QUE LEIA UM NUMERO E MOSTRE O DOBRO O TRIPLO E A RAIZ QUADRADA
 n1 = int(input('Digite um numero: '))
 print('O Dobro de {} é: {}'.format(n1, n1*2))
 print('O Triplo de {} é: {}'.format(n1, n1*3))
