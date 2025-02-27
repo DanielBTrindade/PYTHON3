@@ -1,7 +1,7 @@
 #CRIE UM PROGRAMA QUE LEIA UM NÚMERO INTEIRO E MOSTRE NA TELA SE ELE É PAR OU IMPAR
 # Recebimento do número
 n = int(input('Digite um número: '))
-#Verificar o tipo de numero, um numero é par se o resto da divisão por 2 for 0
+#Verificar o tipo de número, um número é par se o resto da divisão por 2 for 0
 par = n % 2
 # se for par
 if par == 0:
