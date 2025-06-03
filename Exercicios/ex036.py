@@ -4,19 +4,22 @@
 #OU ENTÃO O EMPRÉSTIMO É NEGADO
 import time
 
-imovel = float(input('Valor do imóvel? '))
-salario = float(input('Qual é o seu salário? '))
-parcela = int(input('Em quantas vezes quer vai parcelar? '))
-print(f'As {parcela} parcelas do seu empréstimo de {imovel:.2f} não pode passar de 30% do seu salário, '
-      f'que é de {salario:.2f}.')
+imovel = float(input('Valor do imóvel R$ ? '))
+salario = float(input('Qual é o seu salário R$ ? '))
+anos = int(input('Em quantas anos vai pagar? '))
+parcela = anos * 12
+print(f'As parcelas do seu empréstimo de R${imovel:.2f} não pode passar de 30% do seu salário, '
+      f'que é de R${salario:.2f}.')
+print(f'Calculando parcelas...')
+print(f'Deu um total de {parcela} parcelas.')
 time.sleep(3)
 print('CALCULANDO...')
 time.sleep(3)
 parte_salario = salario * 30 / 100
-print(f'30 % do  seu salário é {parte_salario}')
+print(f'30 % do  seu salário é R${parte_salario}')
 time.sleep(2)
 valor_parcela = imovel / parcela
-print(f'O valor da parcela  do seu imprestimo é de {valor_parcela:.2f}')
+print(f'O valor da parcela  do seu empréstimo é de R$ {valor_parcela:.2f}')
 time.sleep(2)
 if valor_parcela > parte_salario:
     print('Infelizmente seu empréstimo negado')
