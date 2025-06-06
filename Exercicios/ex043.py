@@ -7,7 +7,7 @@
 #- ACIMA DE 40: OBESIDADE MORBIDA
 peso = float(input('Digite seu peso em Kg: ').replace(',', '.'))
 altura = float(input('Digite sua altura em metros: ').replace(',', '.'))
-imc = peso / (altura * altura)
+imc = peso / (altura ** 2)
 print(f'Seu  índice de massa corporal (IMC) é: {imc:.2f}')
 if imc < 18.5:
     print(f'ABAIXO DO PESO.')
@@ -19,4 +19,3 @@ elif imc < 40:
     print('OBESIDADE.')
 else:
     print('OBESIDADE MORBIDA')
-
