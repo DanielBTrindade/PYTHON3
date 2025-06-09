@@ -9,6 +9,6 @@ for c in range(2,n): #testa os múltiplos. de N no intervalo entre 2 e N
         mult += 1
 
 if mult == 0:
-    print("É primo")
+    print("É primo.")
 else:
-    print("Tem",mult," múltiplos acima de 2 e abaixo de",n)
+    print("Não é primo. Tem ",mult," múltiplos acima de 2 e abaixo de",n)
