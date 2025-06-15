@@ -1,0 +1,11 @@
+#CRIE UM PROGRAMA QUE LEIA NOVOS NUMEROS INTEIROS PELO TECLADO. O PROGRAMA SO VAI PARAR QUANDO O USUÁRIO
+# DIGITAR O VALOR 999, QUE É A CONDIÇÃO DE PARADA. NO FINAL MOSTRE QUANTOS NÚMEROS FORAM DIGITADOS E QUAL
+# FOI A SOMA ENTRE ELES ( DESCONSIDERANDO O FLAG)
+lista = []
+while True:
+    n = int(input('DIGITE UM NÚMERO: '))
+    if n == 999:
+        break
+    lista.append(n)
+soma = sum(lista)
+print(f'A soma dos números é: {soma}')
