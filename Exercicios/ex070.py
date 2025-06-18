@@ -8,14 +8,18 @@ maisbarato = []
 while True:
     produto = str(input('Nome do produto: '))
     valor = float(input('Valor do produto: R$ '))
-    continuar = str(input('Deseja continuar [S/N]')).upper().strip()[0]
+    soma += valor
 
     if valor >= 1000:
         maisde1000 += 1
     if barato is None or valor < barato:
         barato = valor
         maisbarato = produto
-    soma += valor
+
+
+    continuar = ' '
+    while continuar not in 'SN':
+        continuar = str(input('Deseja continuar [S/N]')).upper().strip()[0]
     if continuar == 'N':
         break
 

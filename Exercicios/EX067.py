@@ -6,8 +6,6 @@ while True:
         break
     print('-=' * 10)
     for c in range(1, 11):
-        tabuada = n * c
-
-        print(f'{n} x {c} = {tabuada}')
+        print(f'{n} x {c} = {n*c}')
     print('-=' * 10)
 print('FIM')

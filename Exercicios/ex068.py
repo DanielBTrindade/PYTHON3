@@ -7,7 +7,7 @@ print('-=' *10)
 cont = 0
 while True:
     jogador = int(input('Digite um número: '))
-    computador = random.randint(1, 10)
+    computador = random.randint(0,10)
     escolha = str(input('Escolha PAR / IMPAR:')).upper().strip()
     total = jogador + computador
     if total % 2 == 0:
